@@ -4,7 +4,7 @@ import ServerlessHttp from "serverless-http";
 const app = express();
 
 
-app.get('/api', (req, res) => {
+app.get('/.netlify/functions/api', (req, res) => {
     return res.json({
         messages: "hello world!"
     })
